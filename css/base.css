@@ -101,6 +101,16 @@ pre code {
   background: #362430;
 }
 
+.super-bookmarklet, .super-bookmarklet:visited {
+  display: inline-block;
+  padding: .1em .5em;
+  background: #02b4e0;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  color: #f0f0f0;
+}
 
 #page footer {
   padding: 2em 0 1em;
