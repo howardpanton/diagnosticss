@@ -83,6 +83,22 @@ pre code {
 #page .examples {
   float: right;
   width: 330px;
+  position: relative;
+  height: 630px;
+}
+
+.examples ul {
+  list-style: none outside;
+}
+
+.examples ul li {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%
+}
+
+.examples ul li img {
+  display: block;
 }
 
 #page .contents, #page .try-it {
@@ -116,4 +132,99 @@ pre code {
   padding: 2em 0 1em;
   font-size: 75%;
   color: #ddd;
+}
+
+/* animations */
+.examples ul li:last-child {
+  opacity: 1;
+  -webkit-animation: cyclelast 20s linear infinite;
+  -moz-animation: cyclelast 20s linear infinite;
+  animation: cyclelast 20s linear infinite
+}
+
+.examples ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: cyclethird 20s linear infinite;
+  -moz-animation: cyclethird 20s linear infinite;
+  animation: cyclethird 20s linear infinite
+}
+
+.examples ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: cyclesecond 20s linear infinite;
+  -moz-animation: cyclesecond 20s linear infinite;
+  animation: cyclethird 20s linear infinite
+}
+
+.examples ul li:first-child {
+  opacity: 0;
+  -webkit-animation: cyclefirst 20s linear infinite;
+  -moz-animation: cyclefirst 20s linear infinite;
+  animation: cyclethird 20s linear infinite
+}
+
+
+@-webkit-keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+@-moz-keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+@keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+
+
+@-webkit-keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+@keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+
+
+@-webkit-keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+@keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+
+@-webkit-keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
+}
+
+@keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
 }
