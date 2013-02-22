@@ -140,30 +140,30 @@ pre code {
 /* animations */
 .examples ul li:last-child {
   opacity: 1;
-  -webkit-animation: cyclelast 20s linear infinite;
-  -moz-animation: cyclelast 20s linear infinite;
-  animation: cyclelast 20s linear infinite
+  -webkit-animation: cyclelast 28s linear infinite;
+  -moz-animation: cyclelast 28s linear infinite;
+  animation: cyclelast 28s linear infinite
 }
 
 .examples ul li:nth-child(3) {
   opacity: 0;
-  -webkit-animation: cyclethird 20s linear infinite;
-  -moz-animation: cyclethird 20s linear infinite;
-  animation: cyclethird 20s linear infinite
+  -webkit-animation: cyclethird 28s linear infinite;
+  -moz-animation: cyclethird 28s linear infinite;
+  animation: cyclethird 28s linear infinite
 }
 
 .examples ul li:nth-child(2) {
   opacity: 0;
-  -webkit-animation: cyclesecond 20s linear infinite;
-  -moz-animation: cyclesecond 20s linear infinite;
-  animation: cyclethird 20s linear infinite
+  -webkit-animation: cyclesecond 28s linear infinite;
+  -moz-animation: cyclesecond 28s linear infinite;
+  animation: cyclethird 28s linear infinite
 }
 
 .examples ul li:first-child {
   opacity: 0;
-  -webkit-animation: cyclefirst 20s linear infinite;
-  -moz-animation: cyclefirst 20s linear infinite;
-  animation: cyclethird 20s linear infinite
+  -webkit-animation: cyclefirst 28s linear infinite;
+  -moz-animation: cyclefirst 28s linear infinite;
+  animation: cyclethird 28s linear infinite
 }
 
 
