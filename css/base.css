@@ -1,0 +1,41 @@
+html, body, h1, h2, h3, h4, ul, li, ol, dl, dt, dd, p, form, fieldset, label, img, table {
+  padding: 0; margin: 0; font-size: 100%; font-weight: normal; border: 0
+}
+
+html {min-height: 100%}
+
+body {
+  min-height: 100%;
+  color: #f0f0f0;
+  font: normal normal 100%/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #a19fa4 url(../i/bg.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+article, header, footer, aside {
+  display: block
+}
+
+/* links */
+a, a:visited, a:hover {color: #07a}
+a:hover, a:active {color: #d04000}
+
+/* headers, paragraphs */
+h1, h2, h3, h4 {margin: 1em 0 .5em; color: #fff}
+p {margin: .5em 0}
+h1 {font-size: 2em}
+h2 {font-size: 150%}
+h3 {font-size: 125%}
+h4 {font-size: 110%; font-weight: bold}
+
+/* lists */
+ul, ol {list-style-position: inside; padding-left: 24px}
+dt {font-weight: bold}
+dd {padding-left: 32px}
+
+
+#wrap {
+  max-width: 30em;
+  margin: 0 auto;
+}
