@@ -18,7 +18,7 @@ article, header, footer, aside {
 }
 
 /* links */
-a, a:visited, a:hover {color: #07a}
+a, a:visited, a:hover {color: #02b4e0}
 a:hover, a:active {color: #d04000}
 
 /* headers, paragraphs */
