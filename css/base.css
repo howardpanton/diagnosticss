@@ -7,7 +7,7 @@ html {min-height: 100%}
 body {
   min-height: 100%;
   color: #f0f0f0;
-  font: normal normal 100%/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: normal normal 100%/1.4 PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #a19fa4 url(../i/bg.jpg) center center no-repeat;
   -moz-background-size: cover;
   background-size: cover;
@@ -22,20 +22,88 @@ a, a:visited, a:hover {color: #07a}
 a:hover, a:active {color: #d04000}
 
 /* headers, paragraphs */
-h1, h2, h3, h4 {margin: 1em 0 .5em; color: #fff}
+h1, h2, h3, h4 {margin: .5em 0 1em; color: #f9f9f9}
 p {margin: .5em 0}
 h1 {font-size: 2em}
 h2 {font-size: 150%}
 h3 {font-size: 125%}
-h4 {font-size: 110%; font-weight: bold}
+h4 {font-size: 110%}
 
 /* lists */
 ul, ol {list-style-position: inside; padding-left: 24px}
-dt {font-weight: bold}
+ul {list-style-type: square}
 dd {padding-left: 32px}
 
+h2+p, h3+p {
+  margin: -1em 0 1.5em;
+}
 
-#wrap {
-  max-width: 30em;
+pre, code {
+  font-family: Monaco, lucida console, bitstream vera sans mono, monospace;
+  font-size: .85em;
+  font-variant: normal;
+}
+
+pre code {
+  font-size: 12px;
+  display: block;
+}
+
+#page {
+  max-width: 690px;
   margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+#page header {
+  overflow: hidden;
+  padding: 20px 25px 18px;
+  margin: 0 350px 20px 0;
+  width: 290px;
+  background: #ce4b41;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 125%;
+  letter-spacing: .05em;
+}
+
+#page header a, #page header a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#page header a:hover {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#page header h1 {
+  margin-bottom: .5em;
+}
+
+#page .examples {
+  float: right;
+  width: 330px;
+}
+
+#page .contents, #page .try-it {
+  margin: 0 350px 20px 0;
+  background: #7bc0a1;
+  padding: 20px 25px 18px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#page .contents p:first-child {
+  font-size: 125%;
+}
+
+#page .try-it {
+  background: #362430;
+}
+
+
+#page footer {
+  padding: 2em 0 1em;
+  font-size: 75%;
+  color: #ddd;
 }
